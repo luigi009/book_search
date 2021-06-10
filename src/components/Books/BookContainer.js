@@ -229,8 +229,8 @@ function BookContainer() {
       {customLayout === 1 ? (
         //Custom Layout 1
         <div>
-          <form className="grid grid-flow-col grid-cols-1 grid-rows-5 gap-5 mt-12 mb-12">
-            <div className="h-80">
+          <form className="grid grid-flow-col grid-cols-1 grid-rows-1 gap-5 mt-12 mb-12 h-full">
+            <div>
               {(filteredBooks.length ? filteredBooks : currentPosts).map(
                 (book, index) => (
                   <div
@@ -269,7 +269,7 @@ function BookContainer() {
       ) : (
         //Custom Layout 2
         <div>
-          <form className="grid grid-flow-col grid-cols-1 grid-rows-1 h-full">
+          <form className="grid grid-flow-col grid-cols-1 grid-rows-1 mt-12 mb-12 h-full">
             <div className="layout-2 p-1 grid grid-cols-2 sm:grid-cols-5 md:grid-cols-3 lg:grid-cols-5 grid-rows-3 sm:grid-rows-1 gap-5">
               {(filteredBooks2.length ? filteredBooks2 : currentPosts2).map(
                 (book, index) => (
