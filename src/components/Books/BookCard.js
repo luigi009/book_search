@@ -16,7 +16,7 @@ function BookCard({
         <img className="p-2" src={image} alt={title} width="200" height="200" />
       </div>
 
-      <div className="grid grid-flow-col grid-cols-1 grid-rows-5 lg:grid-rows-5 gap-1">
+      <div>
         <div className="grid-cols-2 grid-rows-2">
           <h1 className="text-lg font-bold whitespace-nowrap overflow-hidden overflow-ellipsis">
             {title}
@@ -35,17 +35,17 @@ function BookCard({
           </h1>
         </div>
 
-        <div>
+        <div className="mb-3 mt-3">
           <h1 className="text-md whitespace-nowrap overflow-hidden overflow-ellipsis">
             Description: {description}
           </h1>
         </div>
 
-        <div>
+        <div className="mb-3 mt-3">
           <h1 className="text-md">Publisher: {publisher}</h1>
         </div>
 
-        <div>
+        <div className="mb-3 mt-3">
           <h1 className="text-md">Rank: {rank}</h1>
         </div>
 
