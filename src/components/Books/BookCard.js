@@ -42,7 +42,7 @@ function BookCard({
         </div>
 
         <div className="mb-3 mt-3">
-          <h1 className="text-md">Publisher: {publisher}</h1>
+          <h1 className="text-md whitespace-nowrap overflow-hidden overflow-ellipsis">Publisher: {publisher}</h1>
         </div>
 
         <div className="mb-3 mt-3">
