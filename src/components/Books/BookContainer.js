@@ -82,7 +82,6 @@ function BookContainer() {
   //Next Page
   const nextPage = () => {
     setCurrentPage((currentPage) => currentPage + 1); // Layout 1
-    console.log("Proxima Pagina");
   };
 
   const nextPage2 = () => {
